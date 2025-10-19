@@ -40,13 +40,13 @@ describe("api/editor/theme", function () {
 
         var context = await theme.context();
         context.should.have.a.property("page");
-        context.page.should.have.a.property("title", "Node-RED");
+        context.page.should.have.a.property("title", "PYE Asset Manager");
         context.page.should.have.a.property("favicon", "favicon.ico");
         context.page.should.have.a.property("tabicon");
         context.page.tabicon.should.have.a.property("icon", "red/images/node-red-icon-black.svg");
         context.page.tabicon.should.have.a.property("colour", "#8f0000");
         context.should.have.a.property("header");
-        context.header.should.have.a.property("title", "Node-RED");
+        context.header.should.have.a.property("title", "PYE Asset Manager");
         context.header.should.have.a.property("image", "red/images/node-red.svg");
         context.should.have.a.property("asset");
         context.asset.should.have.a.property("red", "red/red.min.js");
